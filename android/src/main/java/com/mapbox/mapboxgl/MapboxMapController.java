@@ -340,7 +340,7 @@ final class MapboxMapController
         .build();
 		*/
 LocationComponentOptions customLocationComponentOptions = LocationComponentOptions.builder(context)
-.elevation(5)
+.elevation(35)
 .accuracyAlpha(.2f)
 .accuracyColor(Color.RED)
 .build();		
