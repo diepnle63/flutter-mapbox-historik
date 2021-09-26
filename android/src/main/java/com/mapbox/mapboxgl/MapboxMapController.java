@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 package com.mapbox.mapboxgl;
-
+import android.graphics.Color;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
