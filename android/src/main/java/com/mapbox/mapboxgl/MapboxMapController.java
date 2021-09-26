@@ -343,7 +343,6 @@ LocationComponentOptions customLocationComponentOptions = LocationComponentOptio
 .elevation(5)
 .accuracyAlpha(.6f)
 .accuracyColor(Color.RED)
-.foregroundDrawable(R.drawable.android_custom_location_icon)
 .build();		
       locationComponent = mapboxMap.getLocationComponent();
       locationComponent.activateLocationComponent(context, style, locationComponentOptions);
