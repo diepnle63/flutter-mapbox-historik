@@ -19,7 +19,7 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-
+import com.mapbox.mapboxgl.R;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.DefaultLifecycleObserver;
 import androidx.lifecycle.Lifecycle;
@@ -340,9 +340,10 @@ final class MapboxMapController
         .build();
 		*/
 LocationComponentOptions customLocationComponentOptions = LocationComponentOptions.builder(context)
-.elevation(35)
+.elevation(2)
 .accuracyAlpha(.2f)
-.accuracyColor(Color.RED)
+.foregroundDrawable(R.drawable.location_center)
+.accuracyColor(Color.rgb(51, 194, 255))
 .build();		
       locationComponent = mapboxMap.getLocationComponent();
       locationComponent.activateLocationComponent(context, style, customLocationComponentOptions);
