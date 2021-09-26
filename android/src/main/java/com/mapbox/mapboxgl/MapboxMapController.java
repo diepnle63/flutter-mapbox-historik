@@ -335,9 +335,16 @@ final class MapboxMapController
   private void enableLocationComponent(@NonNull Style style) {
     if (hasLocationPermission()) {
       locationEngine = LocationEngineProvider.getBestLocationEngine(context);
-      LocationComponentOptions locationComponentOptions = LocationComponentOptions.builder(context)
+/*      LocationComponentOptions locationComponentOptions = LocationComponentOptions.builder(context)
         .trackingGesturesManagement(true)
         .build();
+		*/
+LocationComponentOptions customLocationComponentOptions = LocationComponentOptions.builder(this)
+.elevation(5)
+.accuracyAlpha(.6f)
+.accuracyColor(Color.RED)
+.foregroundDrawable(R.drawable.android_custom_location_icon)
+.build();		
       locationComponent = mapboxMap.getLocationComponent();
       locationComponent.activateLocationComponent(context, style, locationComponentOptions);
       locationComponent.setLocationComponentEnabled(true);
