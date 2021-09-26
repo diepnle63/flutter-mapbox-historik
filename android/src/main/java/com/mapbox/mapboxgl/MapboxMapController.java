@@ -345,7 +345,7 @@ LocationComponentOptions customLocationComponentOptions = LocationComponentOptio
 .accuracyColor(Color.BLUE)
 .build();		
       locationComponent = mapboxMap.getLocationComponent();
-      locationComponent.activateLocationComponent(context, style, locationComponentOptions);
+      locationComponent.activateLocationComponent(context, style, customLocationComponentOptions);
       locationComponent.setLocationComponentEnabled(true);
       // locationComponent.setRenderMode(RenderMode.COMPASS); // remove or keep default?
       locationComponent.setLocationEngine(locationEngine);
