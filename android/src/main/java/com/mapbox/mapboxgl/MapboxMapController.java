@@ -339,10 +339,10 @@ final class MapboxMapController
         .trackingGesturesManagement(true)
         .build();
 		*/
-LocationComponentOptions customLocationComponentOptions = LocationComponentOptions.builder(this)
+LocationComponentOptions customLocationComponentOptions = LocationComponentOptions.builder(context)
 .elevation(5)
-.accuracyAlpha(.6f)
-.accuracyColor(Color.RED)
+.accuracyAlpha(.2f)
+.accuracyColor(Color.BLUE)
 .build();		
       locationComponent = mapboxMap.getLocationComponent();
       locationComponent.activateLocationComponent(context, style, locationComponentOptions);
