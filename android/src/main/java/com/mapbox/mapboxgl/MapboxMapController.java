@@ -342,6 +342,9 @@ final class MapboxMapController
 LocationComponentOptions customLocationComponentOptions = LocationComponentOptions.builder(context)
 .elevation(2)
 .accuracyAlpha(.2f)
+//        .bearingTintColor(Color.rgb(51, 194, 255))
+      .bearingDrawable(R.drawable.location_center)
+//      .compassAnimationEnabled(false)
 .foregroundDrawable(R.drawable.location_center)
 .accuracyColor(Color.rgb(51, 194, 255))
 .build();		
